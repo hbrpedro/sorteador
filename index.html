@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<script>
+
+    var opcoes = [32, 43, 3, 7, 55, 98];
+
+    function sorteia() {
+
+        for(contador = 1; contador => opcoes.length; contador++) {
+
+            posicao = parseInt( Math.random() * 10 );
+
+            if(posicao < opcoes.length) {
+
+                return posicao;
+                break;
+
+            }
+        }
+    }
+
+    sorteia();
+
+    console.log(opcoes);
+    console.log(posicao);
+    console.log(opcoes[posicao]);
+
+</script>
+</body>
